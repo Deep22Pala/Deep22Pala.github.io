@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ESE: Tic Tac Toe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1>ESE: Tic Tac Toe</h1>
+<div style="background-color: white; padding: 20px; border-radius: 10px;">
+    <div id="title" class="h2"></div>
+    <div id="board">
+        <div class="field"><button id="6" class="boardBtn" onClick="move(this.id)"></button></div>
+        <div class="field"><button id="7" class="boardBtn" onClick="move(this.id)"></button></div>
+        <div class="field"><button id="8" class="boardBtn" onClick="move(this.id)"></button></div>
+        <div class="field"><button id="3" class="boardBtn" onClick="move(this.id)"></button></div>
+        <div class="field"><button id="4" class="boardBtn" onClick="move(this.id)"></button></div>
+        <div class="field"><button id="5" class="boardBtn" onClick="move(this.id)"></button></div>
+        <div class="field"><button id="0" class="boardBtn" onClick="move(this.id)"></button></div>
+        <div class="field"><button id="1" class="boardBtn" onClick="move(this.id)"></button></div>
+        <div class="field"><button id="2" class="boardBtn" onClick="move(this.id)"></button></div>
+    </div>
+</div>
+<div id="output"></div>
+<br/>
+<div id="login" style="background-color: white; padding: 20px; border-radius: 10px;">
+    <div>
+        <div class="form-group">
+            <div class="form-outline w-100">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" aria-describedby="user">
+            </div>
+        </div>
+        <div class="form-group" style="margin-top: 10px;">
+            <div class="form-outline w-100">
+                <label for="gameId">Game ID</label>
+                <input type="text" class="form-control" id="gameId" placeholder="Enter Game ID">
+            </div>
+        </div>
+        <button id="sub" onclick="login()" class="btn btn-primary" style="margin-top: 20px;">Submit</button>
+    </div>
+</div>
+<script src="js/ClientWebsocket.js"></script>
+
+</body>
+</html>

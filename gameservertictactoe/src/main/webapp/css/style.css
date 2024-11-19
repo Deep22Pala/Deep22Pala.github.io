@@ -1,0 +1,54 @@
+
+body {
+    background-color: rgba(168, 246, 247, 0.5);
+    padding: 20px;
+}
+
+h1 {
+    left: auto;
+}
+
+#board {
+    height: 300px;
+    width: 300px;
+    background-color: aliceblue;
+    border: 3px solid black;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.field {
+    height: 98px;
+    width: 98px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+.field .boardBtn {
+    height: 98px;
+    width: 98px;
+    overflow: hidden;
+    outline: none;
+    display: inline-block;
+}
+
+.field .playedFieldX {
+    height: 98px;
+    width: 98px;
+    background-size: 98px;
+    background-image: url(../img/X.png);
+}
+
+.field .playedFieldO {
+    height: 98px;
+    width: 98px;
+    background-size: 98px;
+    background-image: url(../img/O.png);
+}
+
+.field .playedFieldO:hover {
+    background-size: 98px;
+    background-image: url(../img/O.png);
+}
